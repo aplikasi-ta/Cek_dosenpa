@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bdc3c7"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="450dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <EditText
+                android:id="@+id/txt_npm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:hint="NPM"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txt_nama_mhs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:hint="Nama Mahasiswa"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/txt_mail_mhs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/txt_telp_mhs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:hint="No. Telepon"
+                android:inputType="phone" />
+
+            <Spinner
+                android:id="@+id/sp_prodi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/pembayaran"
+                android:padding="20dp"></Spinner>
+
+            <Spinner
+                android:id="@+id/sp_pa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"></Spinner>
+
+            <EditText
+                android:id="@+id/txt_judul"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:lines="2"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:hint="Judul Tugas Akhir"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/btn_regs_mhs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:background="#27b43e"
+                android:text="REGISTER"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_nidnn"
+        android:textColor="#bdc3c7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="29dp"
+        android:text="---" />
+
+</RelativeLayout>
